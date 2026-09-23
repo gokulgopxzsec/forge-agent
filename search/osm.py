@@ -19,7 +19,7 @@ def overpass_search(query: str, timeout: int = 45):
             response = requests.post(
                 server,
                 data=query,
-                timeout=timeout,
+                timeout=20,
                 headers={
                     "User-Agent": "ForgeAgent/0.1"
                 }
